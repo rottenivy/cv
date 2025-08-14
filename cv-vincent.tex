@@ -1,0 +1,211 @@
+% Zhihao (Vincent) Zheng - Curriculum Vitae
+% Email: zhihao.zheng@mail.mcgill.ca
+% Web: https://vincent-zheng.com/
+% Repo: https://github.com/rottenivy/cv
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[strict,autostyle]{csquotes}
+\usepackage[USenglish]{babel}
+\usepackage{microtype}
+\usepackage{datetime}
+\usepackage{tabto}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{setspace}
+
+\newcommand{\myname}{Zhihao (Vincent) Zheng}
+
+\usepackage{crimson}
+\usepackage{helvet}
+
+\newcommand{\listtabwidth}{1.75cm}
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+\SetTracking{encoding=T1, family=\sfdefault}{50}
+\titleformat{\section}{\sffamily\small\bfseries\lsstyle\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{24pt plus 4pt minus 2pt}{12pt plus 2pt minus 2pt}
+\titleformat{\subsection}{\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+
+\geometry{body={6.5in, 9.0in}, left=1.0in, top=1.0in}
+\setlength\parindent{0em}
+\setstretch{0.9}
+\newcommand{\listitemspace}{0.25em}
+
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    citecolor   = black,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {probabilistic machine learning, time series forecasting, uncertainty quantification, traffic data science},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright
+
+    \namefont{\myname}
+
+    \vspace{1em}
+    \begin{minipage}[t]{0.64\textwidth}
+        Faculty of Engineering \\
+        McGill University
+    \end{minipage}
+    \begin{minipage}[t]{0.35\textwidth}
+        Email: \href{mailto:zhihao.zheng@mail.mcgill.ca}{zhihao.zheng@mail.mcgill.ca} \\
+        Phone: +1 (438) 941-6646 \\
+        Web: \href{https://vincent-zheng.com/}{https://vincent-zheng.com/}
+    \end{minipage}
+    \vspace{0.5em}
+
+    \section*{Education}
+    \begin{tablist}
+        \item[Ph.D.] \tab Civil Engineering (Machine learning \& Statistics), McGill University, Canada, 2021 - expected 2025
+        \item \tab {\footnotesize\textit{Thesis: ``Probabilistic Time Series Forecasting with Correlated Errors''}}
+        \item[M.S.]  \tab Transportation Engineering (Network Science), Central South University, China, 2020
+        \item \tab {\footnotesize\textit{Thesis: ``Understanding Coupling Dynamics of Public Transportation Systems''}}
+        \item[B.E.]  \tab Transportation Engineering, Central South University, China, 2017 \textbf{(Rank: 3/116)}
+    \end{tablist}
+
+    \section*{Research Areas}
+    Probabilistic ML · Generative Modeling · Uncertainty Quantification · Sequential/Multimodal Data
+
+    \section*{Technical Skills}
+    Python · PyTorch · NumPy/Pandas · Git · Docker
+
+    \section*{Selected Publications}
+    \subsection*{Preprints}
+    \begin{tablist}
+        \item[2024] \tab \textbf{Zheng, Z.} and Sun, L. \enquote{MVG-CRPS: A Robust Loss Function for Multivariate Probabilistic Forecasting.} \textit{arXiv preprint} \href{https://arxiv.org/abs/2410.09133}{arXiv:2410.09133}
+    \end{tablist}
+
+    \subsection*{Peer-Reviewed Articles}
+    \begin{tablist}
+        \item[2025] \tab \textbf{Zheng, Z.}, Choi, S. and Sun, L. \enquote{Probabilistic Traffic Forecasting with Dynamic Regression.} \textit{Transportation Science} \href{https://pubsonline.informs.org/doi/abs/10.1287/trsc.2024.0560}{doi:10.1287/trsc.2024.0560}
+        \item[2024] \tab \textbf{Zheng, Z.} and Sun, L. \enquote{Multivariate Probabilistic Time Series Forecasting with Correlated Errors.} In \textit{Proceedings of the 38th Conference on Neural Information Processing Systems} (\textbf{NeurIPS 2024}) \href{https://papers.nips.cc/paper_files/paper/2024/file/619b8e3ead58dce90bc615f2a7d5d102-Paper-Conference.pdf}{[pdf]}
+        \item[2024] \tab \textbf{Zheng, Z.}, Choi, S., and Sun, L. \enquote{Better Batch for Deep Probabilistic Time Series Forecasting}. \textit{International Conference on Artificial Intelligence and Statistics} (\textbf{AISTATS 2024}) vol. 238:91--99. PMLR. \href{https://proceedings.mlr.press/v238/zheng24a.html}{[pdf]}
+        \item[2021] \tab \textbf{Zheng, Z.}, Ling, X., Wang, P., Xiao, J. and Zhang, F. \enquote{A Hybrid Model for Predicting Anomalous Large Passenger Flow in Urban Metros.} \textit{IET Intelligent Transport Systems} 14 (14), 1987--1996. \href{https://doi.org/10.1049/iet-its.2020.0054}{doi:10.1049/iet-its.2020.0054}
+        \item[2018] \tab \textbf{Zheng, Z.}, Huang, Z., Zhang, F. and Wang, P. \enquote{Understanding Coupling Dynamics of Public Transportation.} \textit{EPJ Data Science} 7, 23. \href{https://doi.org/10.1140/epjds/s13688-018-0148-6}{doi:10.1140/epjds/s13688-018-0148-6}
+        \item[2018] \tab \textbf{Zheng, Z.}, Wu, W., Chen, X., Hu, R., Liu, X. and Wang, P. \enquote{A Traffic Sensing and Analyzing System Using Social Media Data.} \textit{Acta Automatica Sinica} 44 (4), 656--666. \href{http://dx.doi.org/10.16383/j.aas.2017.c160537}{doi:10.16383/j.aas.2017.c160537}
+    \end{tablist}
+
+    \textit{Complete bibliography:} \href{https://scholar.google.com/citations?hl=en&user=h2Et54sAAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}
+
+    \section*{Teaching Experience}
+    \begin{tablist}
+        \item[Fall 2024] TA, CIVE 440 Traffic Engineering and Simulation, McGill University
+        \item[Winter 2024] TA, CIVE 542 Transportation Network Analysis, McGill University
+        \item[Fall 2023] TA, CIVE 440 Traffic Engineering and Simulation, McGill University
+        \item[Winter 2023] TA, CIVE 542 Transportation Network Analysis, McGill University
+        \item[Winter 2022] TA, CIVE 319 Transportation Engineering, McGill University
+    \end{tablist}
+
+    \section*{Invited Talks}
+    \begin{tablist}
+        \item[2018] \tab \enquote{Research Paper Done Right.} School of Traffic and Transportation Engineering, Central South University. Graduate Student Academic Seminar Series. Changsha, China. Oct 31.
+    \end{tablist}
+
+    \section*{Conference Activity}
+    \subsection*{Conference Presentation}
+    \begin{tablist}
+        \item[2024] \tab  \enquote{Better Batch for Deep Probabilistic Time Series Forecasting.} The 27th International Conference on Artificial Intelligence and Statistics (AISTATS 2024). València, Spain. May 2--4. (Poster)
+        \item[2024] \tab  \enquote{Deep Probabilistic Traffic Forecasting with Correlated Errors.} 2024 Transportation Research Board 103rd Annual Meeting (TRB 2024). Washington, DC. Jan 7--11. (Poster)
+        \item[2023] \tab  \enquote{Dynamic Modes as Time Representation for Traffic Time Series Forecasting.} 2023 Transportation Research Board 102nd Annual Meeting (TRB 2023). Washington, DC. Jan 7--11. (Poster)
+        \item[2018] \tab  \enquote{Coupling Dynamics of Multiplex Public Transportation Networks and Multimodal Urban Mobility.} 2018 Chinese Conference on Complex Network (CCCN 2018). Chongqing, China. Oct 12--15. (Oral)
+        \item[2018] \tab  \enquote{Statistical Analysis of Traffic-Related Social Media Data in China.} 2018 International Conference of Applications and Techniques in Cyber Intelligence (ATCI 2018). Shanghai, China. Jul 11--13. (Oral)
+    \end{tablist}
+
+    \section*{Internship}
+    \begin{tablist}
+        \item[2021] \tab  Mitacs with ExPretio Technologies, "Adaptive multi-horizon models for probabilistic demand forecasting".
+    \end{tablist}
+
+    \section*{Grants and Awards}
+    \subsection*{Awards and Honors}
+    \begin{tablist}
+        \item[2023] \tab Graduate Research Enhancement and Travel Awards (G.R.E.A.T.) (CA\$500)
+        \item[2020] \tab 2020 Outstanding Graduates of Hunan Province, China (1\%)
+        \item[2019] \tab 2nd Prize, China Postgraduate Mathematical Contest in Modeling (13\%)
+        \item[2019] \tab 2018--2019 Central South University Outstanding Student Award (5\%)
+        \item[2018] \tab 2017--2018 Central South University Outstanding Student Award (5\%)
+        \item[2017] \tab 2017 Outstanding Graduates of Hunan Province, China (1\%)
+        \item[2016] \tab 1st Prize, National Competition of Transportation Science and Technology, Ministry of Education of China (2\%)
+        \item[2016] \tab 2015--2016 Central South University Outstanding Student Award (5\%)
+        \item[2015] \tab 2014--2015 Central South University Outstanding Student Award (5\%)
+        \item[2014] \tab 2013--2014 Central South University Outstanding Student Award (5\%)
+    \end{tablist}
+
+    \subsection*{Scholarships}
+    \begin{tablist}
+        \item[2018] \tab National Scholarship for Graduate Students, Ministry of Education of China (¥20,000) (0.1\%)
+        \item[2016] \tab National Scholarship for Outstanding Students Majoring in Transportation Engineering (¥5,000) (0.8\%)
+        \item[2016] \tab Central South University 2nd Class Academic Scholarship (¥1,500)
+        \item[2015] \tab Central South University 1st Class Academic Scholarship (¥2,000)
+        \item[2015] \tab Xinheng Corporation Xinheng Education Scholarship (¥10,000)
+        \item[2014] \tab Central South University 2nd Class Academic Scholarship (¥1,500)
+    \end{tablist}
+
+    \subsection*{Grants and Fellowships}
+    \begin{tablist}
+        \item[2022--23] \tab McGill Graduate Excellence Fellowship (GEF) (CA\$5,000)
+        \item[2022--26] \tab FRQNT B2X PhD Scholarship (CA\$21,000/year)
+        \item[2021--24] \tab McGill Engineering Doctoral Award (MEDA) (CA\$37,000/year)
+        \item[2019--22] \tab Large Crowd Gathering Mechanism, Early Warning and Management Method Based on Multi-Source Big Data Fusion (¥480,000). National Natural Science Foundation of China. Student Participant.
+        \item[2017--20] \tab Central South University Graduate Fellowship (¥16,000/year)
+        \item[2016--17] \tab A Traffic Events Detection System Based on Social Media Data (¥3,000). Central South University. Co-PI.
+        \item[2015--16] \tab A Traffic Signal System for Blind Pedestrians Based on Smart Wristbands (¥20,000). National Students’ Innovation and Entrepreneurship Training Program of China. PI.
+    \end{tablist}
+
+    \section*{Service}
+    \subsection*{Academic Journal Peer Review}
+    \begin{itemize}
+        \item \textit{International Journal of Data Science and Analytics}
+        \item \textit{Scientific Reports}
+        \item \textit{Knowledge and Information Systems}
+        \item \textit{Transportation Research Part C: Emerging Technologies}
+        \item \textit{IEEE Transactions on Intelligent Transportation Systems}
+        \item \textit{Journal of Computational Science}
+        \item \textit{Journal of Advanced Transportation}
+        \item \textit{Chinese Journal of Computers}
+    \end{itemize}
+
+    \subsection*{Conference Peer Review}
+    \begin{itemize}
+        \item NeurIPS 2024 Workshop TSALM
+        \item IEEE Conference on Intelligent Transportation Systems (ITSC)
+        \item Transportation Research Board Annual Meeting (TRB)
+    \end{itemize}
+
+    \begin{center}
+        \vfill
+        Updated \monthyeardate\today
+    \end{center}
+
+\end{document}
